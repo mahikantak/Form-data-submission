@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="css/forms.css"  rel="stylesheet" />
+   </head>
+   <body>
+      <div  class='container'>
+         <h3>Form</h3>
+         <form>
+            <div class="form-group">
+               <label for="firstname" class="label">First Name</label>
+               <div class="form-field">
+                  <input type="text" name="fname" class="input-field"  placeholder="First name" required>
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="gender" class="label">Gender</label>
+               <div class="form-field radios" aria-required="true">
+                  <input type="radio" name="gender" value="Male"> Male
+                  <input type="radio" name="gender" value="Female"> Female
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="country" class="label">Country</label>
+               <div class="form-field">
+                  <select name="contries" class="input-field" >
+                     <option>India</option>
+                     <option>Austraila</option>
+                     <option>England</option>
+                     <option>United States</option>
+                     <option>Iran</option>
+                  </select>
+               </div>
+            </div>
+            <div class="form-group textarea">
+               <label for="comments" class="label">Comments</label>
+               <div class="form-field">
+                  <textarea name="comments" class="input-field" rows="3" required></textarea>
+               </div>
+            </div>
+            <div class="form-group submit">
+               <input type="submit" class="btn" value="Submit">
+            </div>
+         </form>
+         <div class="table-data">
+            <div class="custom-grid fname"><label class='grid-data'><b>First Name</b></label></div>
+            <div class="custom-grid gender"><label class='grid-data'><b>Gender</b></label></div>
+            <div class="custom-grid contries"><label class='grid-data'><b>Country</b></label></div>
+            <div class="custom-grid comments"><label class='grid-data'><b>Comments</b></label></div>
+         </div>
+      </div>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script src="js/forms.js"></script>
+      
+   </body>
+</html>
